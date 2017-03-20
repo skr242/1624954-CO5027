@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xlmns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Funglasses</title>
+    <meta charset="utf-8" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="logo" class="clslogo">
+            <img class="logo" src="img/logo3.png" alt="Funglasses Logo">
+        </div>
+        <div id="settings">
+            <ul>
+                <li><a class="settext" href="login.html">Login</a></li>
+                <li><a class="settext" href="cart.html">Cart</a></li>
+                <li><a class="settext" href="account.html">My Account</a></li>
+            </ul>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a class="navtext" href="Default.html">Home</a></li>
+                <li><a class="navtext" href="product.html">Products</a></li>
+                <li><a class="navtext" href="about.html">About</a></li>
+                <li><a class="navtext" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <img class="mySlides" src="img/banner/1.jpg" alt="Stussy Advertisement" width="100%">
+            <img class="mySlides" src="img/banner/2.jpg" alt="Woman modelling sunglasses" width="100%">
+            <img class="mySlides" src="img/banner/3.jpg" alt="Woman modelling Rayban sunglasses" width="100%">
+            <img class="mySlides" src="img/banner/4.jpg" alt="Pair of Rayban sunglasses" width="100%">
+
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) { slideIndex = 1 }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(carousel, 4000); // Change image every 2 seconds
+                }
+            </script>
+        </div>
+
+        <div id="content-wrapper">
+
+            <div id="main-content">
+
+                <h1>Welcome to Funglasses Online</h1>
+
+                <p>Your one stop online shopping portal to acquire high quality and the latest sunglasses that are available in the international market. We make it our aim to stay ahead of the fashion trends and provide you the highest quality sunglasses that you aree looking for.</p>
+
+                <h2>Please enjoy our services</h2>
+
+                <p>If you are unable to find satisfactory help or you are somehow, unable to place your order online, please feel free to contact us by any other means. In the contact page above, our physical location is listed, as well as our e-mail address and telephone number. Your satisfaction is our main priority and we will do everything we can to assist you. </p>
+
+
+            </div>
+
+
+        </div>
+
+        <div id="footer">
+
+            <p>&copy; Copyright 2017 | Funglasses | Bandar Seri Begawan | +673 88123812</p>
+
+        </div>
+
+
+
+    </div>
+</body>
+</html>

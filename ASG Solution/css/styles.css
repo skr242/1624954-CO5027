@@ -1,0 +1,102 @@
+﻿body {
+    background-image: url("../img/ep_naturalblack.png");
+
+}
+#wrapper {width:900px; margin: 10px auto; 
+background-image: url("../img/retina_wood_@2X.png"); padding: 0 40px;
+-moz-box-shadow: 0 0 5px 5px white; 
+-webkit-box-shadow: 0 0 5px 5px white;
+box-shadow: 0 0 5px 5px white;
+padding-bottom:2%;
+}
+
+#logo { 
+    float:left;
+    margin-top:20px;
+    margin-left:100px;
+}
+
+
+#settings { 
+
+            float:right;
+            margin-top:10px;
+
+}
+#settings ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 40px;
+    width: 100%;
+}
+    #settings li {
+    display:block;
+    }
+    #settings li a { display:inline-block; 
+                     list-style-type:none; 
+                    padding: 1px 40px;                    
+}
+#settings li a:hover {
+    background-color: #555;
+    color: white;
+}
+.settext {
+    font-size: 15px;
+    text-decoration: none;
+    font-family:Arial;
+    color: #002063;
+}
+
+
+#navbar { clear:both; background-image: url("../img/retina_wood_@2X.png"); ;
+          padding-bottom:20px;
+          width:100%;
+          padding-top:10px;
+}
+
+#navbar ul { padding:0; margin:0;
+             list-style-type: none; 
+             background-image: url("../img/retina_wood_@2X.png");;
+             display: block; margin-left:10%;margin-right:10%;
+             border: 5px solid #330000;
+}
+
+    #navbar li {display:inline;
+    }
+
+#navbar li a { display:inline-block; list-style-type:none; 
+                padding: 8px 40px;
+                           
+}
+
+.navtext {font-size: 30px; text-decoration: none;
+          font-family:Britannic;
+          color:black;
+}
+.navtextactive {font-size: 30px; text-decoration: none;
+          font-family:Britannic;
+          background-color: #555;
+          color:black;
+}
+
+#navbar li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#banner {
+    margin:auto;
+    width:68%;
+    border:3px solid #333300;
+
+}
+
+#main-content { margin:auto; width:580px; }
+#main-content h1, h2 { color: #000;}
+#main-content p { font-size:16px; line-height: 140%; text-align:justify ; }
+
+
+
+
+#footer { clear:both; padding: 10px 0; border-top: 1px #000 dotted }
+#footer p { text-align: center; font-weight: bold; font-size: 13px; }
