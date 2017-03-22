@@ -50,8 +50,9 @@ padding-bottom:2%;
 
 #navbar { clear:both; background-image: url("../img/retina_wood_@2X.png"); ;
           padding-bottom:20px;
-          width:100%;
-          padding-top:10px;
+          width:700px;
+          padding-top:20px;
+          margin-left:100px;
 }
 
 #navbar ul { padding:0; margin:0;

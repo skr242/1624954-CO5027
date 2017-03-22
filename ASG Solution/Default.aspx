@@ -2,7 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="navactive" runat="server">
                 <li><a class="navtextactive" href="Default.aspx">Home</a></li>
                 <li><a class="navtext" href="product.aspx">Products</a></li>
-                <li><a class="navtext" href="about.aspx">About</a></li>
                 <li><a class="navtext" href="contact.aspx">Contact</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

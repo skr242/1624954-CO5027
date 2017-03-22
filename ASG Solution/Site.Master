@@ -23,10 +23,7 @@
         <div id="navbar">
             <ul>
                 <asp:ContentPlaceHolder ID="navactive" runat="server">
-                <li><a class="navtext" href="Default.aspx">Home</a></li>
-                <li><a class="navtext" href="product.aspx">Products</a></li>
-                <li><a class="navtext" href="about.aspx">About</a></li>
-                <li><a class="navtext" href="contact.aspx">Contact</a></li>
+
                     </asp:ContentPlaceHolder>
             </ul>
         </div>
@@ -72,6 +69,7 @@
             <p>&copy; Copyright 2017 | Funglasses | Bandar Seri Begawan | +673 88123812</p>
             <p><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a></p>
             <p><a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></p>
+            <p><a href="admin.aspx">Admin</a></p>
 
         </div>
 
