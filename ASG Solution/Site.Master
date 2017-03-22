@@ -15,9 +15,9 @@
         </div>
         <div id="settings">
             <ul>
-                <li><a class="settext" href="login.html">Login</a></li>
-                <li><a class="settext" href="cart.html">Cart</a></li>
-                <li><a class="settext" href="account.html">My Account</a></li>
+                <li><a class="settext" href="Login.aspx">Login</a></li>
+                <li><a class="settext" href="Cart.aspx">Cart</a></li>
+                <li><a class="settext" href="Account.aspx">My Account</a></li>
             </ul>
         </div>
         <div id="navbar">
@@ -69,7 +69,7 @@
             <p>&copy; Copyright 2017 | Funglasses | Bandar Seri Begawan | +673 88123812</p>
             <p><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a></p>
             <p><a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></p>
-            <p><a href="admin.aspx">Admin</a></p>
+            <p><a href="Admin.aspx">Admin</a></p>
 
         </div>
 
