@@ -101,3 +101,8 @@ padding-bottom:2%;
 
 #footer { clear:both; padding: 10px 0; border-top: 1px #000 dotted }
 #footer p { text-align: center; font-weight: bold; font-size: 13px; }
+
+#map {
+    height: 300px;
+
+}
