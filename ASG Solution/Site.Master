@@ -11,7 +11,7 @@
 <body>
     <div id="wrapper">
         <div id="logo" class="clslogo">
-            <img class="logo" src="img/logo3.png" alt="Funglasses Logo">
+            <img class="logo" src="img/logo3.png" alt="Funglasses Logo"/>
         </div>
         <div id="settings">
             <ul>
@@ -28,10 +28,10 @@
             </ul>
         </div>
         <div id="banner">
-            <img class="mySlides" src="img/banner/1.jpg" alt="Stussy Advertisement" width="100%">
-            <img class="mySlides" src="img/banner/2.jpg" alt="Woman modelling sunglasses" width="100%">
-            <img class="mySlides" src="img/banner/3.jpg" alt="Woman modelling Rayban sunglasses" width="100%">
-            <img class="mySlides" src="img/banner/4.jpg" alt="Pair of Rayban sunglasses" width="100%">
+            <img class="mySlides" src="img/banner/1.jpg" alt="Stussy Advertisement" width="100%"/>
+            <img class="mySlides" src="img/banner/2.jpg" alt="Woman modelling sunglasses" width="100%"/>
+            <img class="mySlides" src="img/banner/3.jpg" alt="Woman modelling Rayban sunglasses" width="100%"/>
+            <img class="mySlides" src="img/banner/4.jpg" alt="Pair of Rayban sunglasses" width="100%"/>
 
             <script>
                 var slideIndex = 0;
@@ -69,6 +69,7 @@
             <p>&copy; Copyright 2017 | Funglasses | Bandar Seri Begawan | +673 88123812</p>
             <p><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a></p>
             <p><a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></p>
+            <p><a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a></p>
             <p><a href="Admin.aspx">Admin</a></p>
 
         </div>

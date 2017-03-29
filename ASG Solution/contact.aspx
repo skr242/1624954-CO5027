@@ -27,7 +27,7 @@
             <asp:TextBox ID="txtMessage" runat="server" Height="87px" TextMode="MultiLine" Width="257px"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+            
         </p>
     </form>
     </div>
