@@ -7,10 +7,40 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Welcome to Funglasses Online</h1>
 
-                <p>Your one stop online shopping portal to acquire high quality and the latest sunglasses that are available in the international market. We make it our aim to stay ahead of the fashion trends and provide you the highest quality sunglasses that you aree looking for.</p>
+                <h2>Featured Items</h2>
+<div id="featwrap">
+    <div class="featprod">
+        <img src="img/product/feat1.jpg" class="image"/>
+        <div class="overlay">
+    <div class="feattext">Ray-Ban RB2027<br /><br />$140</div>
+  </div>
+    </div>
+    <div class="featprod"><img src="img/product/feat2.jpg" class="image"/>
+        <div class="overlay">
+    <div class="feattext">Prada PR 01OS <br /><br />$179</div>
+  </div>
+    </div>
+    <div class="featprod"><img src="img/product/feat3.jpg" class="image"/>
+        <div class="overlay">
+    <div class="feattext">Persol PO3154S<br /><br />$152</div>
+  </div>
+    </div>
 
-                <h2>Please enjoy our services</h2>
+    <div class="featprod"><img src="img/product/feat4.jpg" class="image"/>
+        <div class="overlay">
+    <div class="feattext">Oakley Flak 2.0 XL<br /><br />$159</div>
+  </div>
+    </div>
+    <div class="featprod"><img src="img/product/feat5.jpg" class="image"/>
+        <div class="overlay">
+    <div class="feattext">Persol PO3019S<br /><br />$190</div>
+  </div>
+    </div>
+    <div class="featprod"><img src="img/product/feat6.jpg" class="image"/>
+        <div class="overlay">
+    <div class="feattext">Ray-Ban RB4147<br /><br />$140</div>
+  </div>
+    </div>
 
-                <p>If you are unable to find satisfactory help or you are somehow, unable to place your order online, please feel free to contact us by any other means. In the contact page above, our physical location is listed, as well as our e-mail address and telephone number. Your satisfaction is our main priority and we will do everything we can to assist you. </p>
-
+</div>
 </asp:Content>

@@ -2,7 +2,7 @@
     background-image: url("../img/ep_naturalblack.png");
 
 }
-#wrapper {width:900px; margin: 10px auto; 
+#wrapper {width:900px; margin: 30px auto; 
 background-image: url("../img/retina_wood_@2X.png"); padding: 0 40px;
 -moz-box-shadow: 0 0 5px 5px white; 
 -webkit-box-shadow: 0 0 5px 5px white;
@@ -104,5 +104,48 @@ padding-bottom:2%;
 
 #map {
     height: 300px;
+}
 
+.featprod {
+    position: relative;
+    float: left;
+    margin: 20px 10px 30px 20px;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #555;
+}
+
+.featprod:hover 
+.overlay {
+  opacity: 1;
+}
+
+.feattext {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+ .image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
