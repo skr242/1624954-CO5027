@@ -5,30 +5,32 @@
                 <li><a class="navtextactive" href="Contact.aspx">Contact</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <h2>Contact Us</h2>
     <div id="contact">
     <form id="frmContact" runat="server">
-    <h2>Contact Us</h2>
-        <p>
+    
+        <ol>
+            <li>
             <asp:Label ID="lblName" runat="server" Text="Name: "></asp:Label>
             <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-        </p>
-        <p>
+        </li>
+            <li>
             <asp:Label ID="lblEmail" runat="server" Text="Email: "></asp:Label>
             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-        </p>
-        <p>
+        </li>
+            <li>
             <asp:Label ID="lblSubject" runat="server" Text="Subject: "></asp:Label>
             <asp:TextBox ID="txtSubject" runat="server"></asp:TextBox>
-        </p>
-        <p>
+        </li>
+            <li>
             <asp:Label ID="lblMessage" runat="server" Text="Message: "></asp:Label>
-        </p>
-        <p>
+
             <asp:TextBox ID="txtMessage" runat="server" Height="87px" TextMode="MultiLine" Width="257px"></asp:TextBox>
-        </p>
-        <p>
-            
-        </p>
+        </li>
+            <li>
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="submit"/>
+        </li>
+                </ol>
     </form>
     </div>
     <h2>Map</h2>
@@ -51,7 +53,7 @@
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA64wHmfQ1z_J2S8_fUmwC-cNbV6M5bBl4&callback=initMap"
-    async defer></script>
+    async="async" defer="defer"></script>
 
 
     </div>
