@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ASG_Solution.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="./Site.Master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="ASG_Solution.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="navactive" runat="server">
                 <li><a class="navtextactive" href="Default.aspx">Home</a></li>
                 <li><a class="navtext" href="Product.aspx">Products</a></li>

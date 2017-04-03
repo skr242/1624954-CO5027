@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="ASG_Solution.Site" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.Master.cs" Inherits="ASG_Solution.Site" %>
 
 <!DOCTYPE html>
 
@@ -67,9 +67,9 @@
         <div id="footer">
 
             <p>&copy; Copyright 2017 | Funglasses | Bandar Seri Begawan | +673 88123812</p>
-            <p><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a></p>
-            <p><a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></p>
-            <p><a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a></p>
+            <p><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a></p>
             <p><a href="Admin.aspx">Admin</a></p>
 
         </div>
