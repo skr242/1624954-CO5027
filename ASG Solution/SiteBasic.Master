@@ -29,10 +29,10 @@
             </ul>
         </div>
         <div id="banner">
-            <img class="mySlides" src="img/banner/1.jpg" alt="Stussy Advertisement" width="100%">
-            <img class="mySlides" src="img/banner/2.jpg" alt="Woman modelling sunglasses" width="100%">
-            <img class="mySlides" src="img/banner/3.jpg" alt="Woman modelling Rayban sunglasses" width="100%">
-            <img class="mySlides" src="img/banner/4.jpg" alt="Pair of Rayban sunglasses" width="100%">
+            <img class="mySlides" src="img/banner/1.jpg" alt="Stussy Advertisement" />
+            <img class="mySlides" src="img/banner/2.jpg" alt="Woman modelling sunglasses" />
+            <img class="mySlides" src="img/banner/3.jpg" alt="Woman modelling Rayban sunglasses" />
+            <img class="mySlides" src="img/banner/4.jpg" alt="Pair of Rayban sunglasses" />
 
             <script>
                 var slideIndex = 0;
