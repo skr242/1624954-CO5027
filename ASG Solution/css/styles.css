@@ -4,8 +4,7 @@
 }
 #wrapper {width:900px; margin: 30px auto; 
 background-image: url("../img/retina_wood_@2X.png"); padding: 0 40px;
--moz-box-shadow: 0 0 5px 5px white; 
--webkit-box-shadow: 0 0 5px 5px white;
+
 box-shadow: 0 0 5px 5px white;
 padding-bottom:2%;
 }
@@ -154,7 +153,7 @@ width: 612px;
   height: auto;
 }
 
-#contact {margin-left: 100px;}
+#form {margin-left: 100px;}
 ol li		{ list-style-type:none; padding-top:10px  }
 input, text area		{display: block; width: 250px; border: 1px #000 solid; padding: 5px; }
 textarea				{ display: block; width: 250px; border: 1px #000 solid; padding: 5px; resize:none;}

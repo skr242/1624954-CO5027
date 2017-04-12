@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Contact Us</h2>
-    <div id="contact">
+    <div id="form">
     <form id="frmContact" runat="server">
     
         <ol>
