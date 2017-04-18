@@ -5,7 +5,7 @@
                 <li><a class="navtextactive" href="Contact.aspx">Contact</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <hContact Us</h2>
+    <h2>Contact Us</h2>
     <div id="form">
     <form id="frmContact" runat="server">
     
@@ -52,25 +52,15 @@
 
         
 
-     <script>
-      function initMap() {
-          var funglasses = { lat: 4.907, lng: 114.916 };
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: funglasses
-        });
-        var marker = new google.maps.Marker({
-          position: funglasses,
-          map: map
-        });
-      }
-    </script>
+     <script src="Scripts/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA64wHmfQ1z_J2S8_fUmwC-cNbV6M5bBl4&callback=initMap"
     async="async" defer="defer"></script>
 
 
     </div>
-
+        <div id="map1">
+            <img src="img/map1.png" alt="Block 1B, Simpang 137, Jalan Gadong" height="300"/>
+        </div>
   <br />
 
 </asp:Content>
