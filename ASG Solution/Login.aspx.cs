@@ -26,6 +26,7 @@ namespace ASG_Solution
             if (user != null)
             {
                 LogUserIn(userManager, user);
+                Server.Transfer("Account.aspx", true);
             }
             else
             {

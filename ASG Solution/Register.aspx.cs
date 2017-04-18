@@ -21,12 +21,22 @@ namespace ASG_Solution
         {
             //create a dbcontext that specified the connection string
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            
             //create user store and user manager
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
+            //roles
+            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
+            var roleManager = new RoleManager<IdentityRole>(roleStore);
             //create user
             var user = new IdentityUser() { UserName = txtRegEmail.Text, Email = txtRegEmail.Text };
-            IdentityResult result = manager.Create(user, txtRegPassword.Text);
+            manager.Create(user, txtRegPassword.Text);
+
+            IdentityRole endUserRole = new IdentityRole("endUser");
+            roleManager.Create(endUserRole);
+            manager.AddToRole(user.Id, "endUser");
+            IdentityResult result = manager.Update(user);
+
             if (result.Succeeded)
             {
                 Response.Redirect("Login.aspx");

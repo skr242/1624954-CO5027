@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,12 @@ namespace ASG_Solution
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnAccLogout_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Server.Transfer("Login.aspx", true);
         }
     }
 }
