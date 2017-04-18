@@ -107,9 +107,12 @@ width: 612px;
 
 #map {
     height: 300px;
-}d
- 0px;
-    bororder: 2px solidd b
+}
+
+#map1 {
+    margin-top: 20px;
+    margin-left: 50px;
+}
 
 .featprod {
     position: relative;

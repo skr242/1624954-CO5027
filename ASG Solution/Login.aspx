@@ -8,7 +8,7 @@
         <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="lblLoginPassword" runat="server" Text="Password:"></asp:Label>
-        <asp:TextBox ID="txtLoginPassword" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtLoginPassword" TextMode="Password" runat="server"></asp:TextBox>
             <br />
             <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
             <br />

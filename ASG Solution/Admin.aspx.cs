@@ -13,5 +13,11 @@ namespace ASG_Solution
         {
 
         }
+
+        protected void btnAdminLogout_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Server.Transfer("Login.aspx", true);
+        }
     }
 }
