@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="./Site.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="ASG_Solution.Contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ASG_Solution.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="navactive" runat="server">
                 <li><a class="navtext" href="Default.aspx">Home</a></li>
                 <li><a class="navtext" href="Product.aspx">Products</a></li>
                 <li><a class="navtextactive" href="Contact.aspx">Contact</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Contact Us</h2>
+    <hContact Us</h2>
     <div id="form">
     <form id="frmContact" runat="server">
     
@@ -13,22 +13,35 @@
             <li>
             <asp:Label ID="lblName" runat="server" Text="Name: "></asp:Label>
             <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="reqValName" runat="server" ErrorMessage="A Name is Required. Please key in your name. eg. John Doe" ControlToValidate="txtName"></asp:RequiredFieldValidator>
         </li>
             <li>
             <asp:Label ID="lblEmail" runat="server" Text="Email: "></asp:Label>
             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="An Email is Required. Please key in your email. eg. abc@123.com" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="regexValidEmail" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtEmail" ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
         </li>
             <li>
             <asp:Label ID="lblSubject" runat="server" Text="Subject: "></asp:Label>
-            <asp:TextBox ID="txtSubject" runat="server"></asp:TextBox>
+            
+                <asp:DropDownList ID="ddSubject" runat="server" style="margin-bottom: 0px" Height="38px" Width="171px">
+                    <asp:ListItem Selected="True">General</asp:ListItem>
+                    <asp:ListItem>Payment</asp:ListItem>
+                    <asp:ListItem>Products</asp:ListItem>
+                    <asp:ListItem>Account</asp:ListItem>
+                </asp:DropDownList>
+            
         </li>
             <li>
             <asp:Label ID="lblMessage" runat="server" Text="Message: "></asp:Label>
 
             <asp:TextBox ID="txtMessage" runat="server" Height="87px" TextMode="MultiLine" Width="257px"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="reqValMessage" runat="server" ErrorMessage="A Message is Required. Please enter the Message you wish to send to our Staff." ControlToValidate="txtMessage"></asp:RequiredFieldValidator>
+
         </li>
             <li>
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="submit"/>
+                <asp:Literal ID="litContactSuccess" runat="server"></asp:Literal>
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="submit" OnClick="btnSubmit_Click"/>
         </li>
                 </ol>
     </form>
