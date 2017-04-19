@@ -31,6 +31,24 @@ namespace ASG_Solution {
         protected global::System.Web.UI.WebControls.FileUpload imageFileUploadControl;
         
         /// <summary>
+        /// lblAltText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAltText;
+        
+        /// <summary>
+        /// txtAltText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAltText;
+        
+        /// <summary>
         /// btnFileUpload control.
         /// </summary>
         /// <remarks>
@@ -40,6 +58,15 @@ namespace ASG_Solution {
         protected global::System.Web.UI.WebControls.Button btnFileUpload;
         
         /// <summary>
+        /// litUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litUpload;
+        
+        /// <summary>
         /// CurrentImage control.
         /// </summary>
         /// <remarks>
@@ -47,5 +74,32 @@ namespace ASG_Solution {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image CurrentImage;
+        
+        /// <summary>
+        /// CurrentImage1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CurrentImage1;
+        
+        /// <summary>
+        /// CurrentImage2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CurrentImage2;
+        
+        /// <summary>
+        /// CurrentImage3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CurrentImage3;
     }
 }

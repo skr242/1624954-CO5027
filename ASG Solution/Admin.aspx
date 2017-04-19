@@ -4,17 +4,20 @@
     <h1>Admin</h1>
         <h3>Edit/Delete Products</h3>
     <p>
-        <asp:GridView ID="GridViewProducts" runat="server" AutoGenerateColumns="False" DataSourceID="sqlCO5027" GridLines="None" Width="572px">
+        <asp:GridView ID="GridViewProducts" runat="server" AutoGenerateColumns="False" DataSourceID="sqlCO5027" GridLines="None" Width="572px" DataKeyNames="ID">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
                 <asp:BoundField DataField="UnitPrice" HeaderText="UnitPrice" SortExpression="UnitPrice" />
-                <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="UploadImage.aspx?id={0}" Text="Add Image" />
+                <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" Visible="False" />
+                <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="UploadImage.aspx?Id={0}" Text="Set Image" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="sqlCO5027" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624954_co5027_asgConnectionString %>" SelectCommand="SELECT [Description], [UnitPrice], [ID] FROM [tblProducts]" OldValuesParameterFormatString="original_{0}" DeleteCommand="DELETE FROM [tblProducts] WHERE [ID] = @original_ID" InsertCommand="INSERT INTO [tblProducts] ([Description], [UnitPrice]) VALUES (@Description, @UnitPrice)" UpdateCommand="UPDATE [tblProducts] SET [Description] = @Description, [UnitPrice] = @UnitPrice WHERE [ID] = @original_ID">
+        <asp:SqlDataSource ID="sqlCO5027" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624954_co5027_asgConnectionString %>" SelectCommand="SELECT [Description], [UnitPrice], [ID] FROM [tblProducts]" OldValuesParameterFormatString="original_{0}" DeleteCommand="DELETE FROM [tblProducts] WHERE [ID] = @original_ID AND (([Description] = @original_Description) OR ([Description] IS NULL AND @original_Description IS NULL)) AND (([UnitPrice] = @original_UnitPrice) OR ([UnitPrice] IS NULL AND @original_UnitPrice IS NULL))" InsertCommand="INSERT INTO [tblProducts] ([Description], [UnitPrice]) VALUES (@Description, @UnitPrice)" UpdateCommand="UPDATE [tblProducts] SET [Description] = @Description, [UnitPrice] = @UnitPrice WHERE [ID] = @original_ID AND (([Description] = @original_Description) OR ([Description] IS NULL AND @original_Description IS NULL)) AND (([UnitPrice] = @original_UnitPrice) OR ([UnitPrice] IS NULL AND @original_UnitPrice IS NULL))" ConflictDetection="CompareAllValues">
             <DeleteParameters>
                 <asp:Parameter Name="original_ID" Type="Int32" />
+                <asp:Parameter Name="original_Description" Type="String" />
+                <asp:Parameter Name="original_UnitPrice" Type="String" />
             </DeleteParameters>
             <InsertParameters>
                 <asp:Parameter Name="Description" Type="String" />
@@ -24,6 +27,8 @@
                 <asp:Parameter Name="Description" Type="String" />
                 <asp:Parameter Name="UnitPrice" Type="String" />
                 <asp:Parameter Name="original_ID" Type="Int32" />
+                <asp:Parameter Name="original_Description" Type="String" />
+                <asp:Parameter Name="original_UnitPrice" Type="String" />
             </UpdateParameters>
         </asp:SqlDataSource>
     </p>

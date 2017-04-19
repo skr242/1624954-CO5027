@@ -11,6 +11,10 @@ namespace ASG_Solution
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            var db = new DatabaseEntities();
+            var tblproducts = db.tblProducts.ToList();
+            rptrProducts.DataSource = tblproducts.OrderBy(p => p.ID);
+            rptrProducts.DataBind();
 
         }
     }
