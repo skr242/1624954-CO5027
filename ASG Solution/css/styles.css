@@ -160,7 +160,7 @@ width: 612px;
 
 #form {margin-left: 100px;}
 ol li		{ list-style-type:none; padding-top:10px  }
-input, text area		{display: block; width: 250px; border: 1px #000 solid; padding: 5px; }
+input, text area		{display: block; border: 1px #000 solid; padding: 5px; }
 textarea				{ display: block; width: 250px; border: 1px #000 solid; padding: 5px; resize:none;}
 label					{ display: block; margin-top: 10px; }
 .submit					{ width: 100px; margin-top: 15px; margin-left:80px}
