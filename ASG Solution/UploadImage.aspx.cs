@@ -28,7 +28,7 @@ namespace ASG_Solution
         {
             string productId = Request.QueryString["Id"];
             string extension = (System.IO.Path.GetExtension(imageFileUploadControl.FileName).ToLower());
-            if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".gif")
+            if (extension == ".jpg")
             {
                 System.Drawing.Image img = System.Drawing.Image.FromStream(imageFileUploadControl.PostedFile.InputStream);
                 int width = img.Width;
@@ -40,6 +40,7 @@ namespace ASG_Solution
                 imageData.Width = width;
                 imageData.Height = height;
                 imageData.Extension = extension;
+                imageData.ImageName = productId;
                 db.tblImages.Add(imageData);
                 db.SaveChanges();
 

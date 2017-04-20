@@ -19,5 +19,6 @@ namespace ASG_Solution
         public Nullable<int> Height { get; set; }
         public string AlternateText { get; set; }
         public string Extension { get; set; }
+        public string ImageName { get; set; }
     }
 }

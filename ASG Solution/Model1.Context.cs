@@ -25,7 +25,7 @@ namespace ASG_Solution
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<tblProduct> tblProducts { get; set; }
         public virtual DbSet<tblImage> tblImages { get; set; }
+        public virtual DbSet<tblProduct> tblProducts { get; set; }
     }
 }

@@ -18,8 +18,9 @@ namespace ASG_Solution
 
             var entry = db.tblProducts.Single(p => p.ID == entryId);
 
-            litDescription.Text = entry.Description;
+            litTitle.Text = entry.Title;
             litUnitPrice.Text = entry.UnitPrice;
+            litDescription.Text = entry.Description;
 
             string productId = Request.QueryString["Id"];
             int imageId = int.Parse(productId);

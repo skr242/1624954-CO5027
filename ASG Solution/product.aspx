@@ -5,26 +5,29 @@
                 <li><a class="navtext" href="Contact.aspx">Contact</a></li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <form id="form1" runat="server">
     <h2>Products</h2>
-        <p>
+        <div id="featwrap">
             <asp:Repeater ID="rptrProducts" runat="server">
                 <HeaderTemplate>
                     <ul>
                 </HeaderTemplate>
                 <ItemTemplate>
                     <li>
+                        <div class="featprod">
                         <a href="<%# Eval("Id", "ProductDetails.aspx?Id={0}") %>">
-                            <%#Eval ("Description") %>
-                        </a>
+        <img src="img/product/<%#Eval ("ID") %><%#Eval ("Extension") %>" class="image" alt="<%#Eval ("Title") %>"/>
+                            <div class="overlay">
+    <div class="feattext"><%#Eval ("Title") %><br /><br /><%#Eval ("UnitPrice") %></div>
+  </div>
+                            </a>
+        
+    </div>
                     </li>
                 </ItemTemplate>
                 <FooterTemplate>
                     </ul>
                 </FooterTemplate>
             </asp:Repeater>
-        </p>
-
-    </form>
-
+</div>
+    
 </asp:Content>

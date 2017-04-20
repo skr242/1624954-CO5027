@@ -8,33 +8,32 @@
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
-                <asp:BoundField DataField="UnitPrice" HeaderText="UnitPrice" SortExpression="UnitPrice" />
+                <asp:BoundField DataField="UnitPrice" HeaderText="Price" SortExpression="UnitPrice" />
                 <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" Visible="False" />
-                <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="UploadImage.aspx?Id={0}" Text="Set Image" />
+                <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
+                <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="UploadImage.aspx?Id={0}" Text="Add Image" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="sqlCO5027" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624954_co5027_asgConnectionString %>" SelectCommand="SELECT [Description], [UnitPrice], [ID] FROM [tblProducts]" OldValuesParameterFormatString="original_{0}" DeleteCommand="DELETE FROM [tblProducts] WHERE [ID] = @original_ID AND (([Description] = @original_Description) OR ([Description] IS NULL AND @original_Description IS NULL)) AND (([UnitPrice] = @original_UnitPrice) OR ([UnitPrice] IS NULL AND @original_UnitPrice IS NULL))" InsertCommand="INSERT INTO [tblProducts] ([Description], [UnitPrice]) VALUES (@Description, @UnitPrice)" UpdateCommand="UPDATE [tblProducts] SET [Description] = @Description, [UnitPrice] = @UnitPrice WHERE [ID] = @original_ID AND (([Description] = @original_Description) OR ([Description] IS NULL AND @original_Description IS NULL)) AND (([UnitPrice] = @original_UnitPrice) OR ([UnitPrice] IS NULL AND @original_UnitPrice IS NULL))" ConflictDetection="CompareAllValues">
+        <asp:SqlDataSource ID="sqlCO5027" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624954_co5027_asgConnectionString %>" SelectCommand="SELECT [Description], [UnitPrice], [ID], [Title] FROM [tblProducts]" OldValuesParameterFormatString="original_{0}" DeleteCommand="DELETE FROM [tblProducts] WHERE [ID] = @original_ID" InsertCommand="INSERT INTO [tblProducts] ([Description], [UnitPrice], [Title]) VALUES (@Description, @UnitPrice, @Title)" UpdateCommand="UPDATE [tblProducts] SET [Description] = @Description, [UnitPrice] = @UnitPrice, [Title] = @Title WHERE [ID] = @original_ID">
             <DeleteParameters>
                 <asp:Parameter Name="original_ID" Type="Int32" />
-                <asp:Parameter Name="original_Description" Type="String" />
-                <asp:Parameter Name="original_UnitPrice" Type="String" />
             </DeleteParameters>
             <InsertParameters>
                 <asp:Parameter Name="Description" Type="String" />
                 <asp:Parameter Name="UnitPrice" Type="String" />
+                <asp:Parameter Name="Title" Type="String" />
             </InsertParameters>
             <UpdateParameters>
                 <asp:Parameter Name="Description" Type="String" />
                 <asp:Parameter Name="UnitPrice" Type="String" />
+                <asp:Parameter Name="Title" Type="String" />
                 <asp:Parameter Name="original_ID" Type="Int32" />
-                <asp:Parameter Name="original_Description" Type="String" />
-                <asp:Parameter Name="original_UnitPrice" Type="String" />
             </UpdateParameters>
         </asp:SqlDataSource>
     </p>
             <h3>Add Products</h3>
         <p>
-            <asp:FormView ID="FVInsertProduct" runat="server" DataKeyNames="ID" DataSourceID="sqlCO5027" DefaultMode="Insert">
+            <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="sqlCO5027" DefaultMode="Insert">
                 <EditItemTemplate>
                     Description:
                     <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
@@ -44,6 +43,9 @@
                     <br />
                     ID:
                     <asp:Label ID="IDLabel1" runat="server" Text='<%# Eval("ID") %>' />
+                    <br />
+                    Title:
+                    <asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' />
                     <br />
                     <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
                     &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -56,6 +58,9 @@
                     <asp:TextBox ID="UnitPriceTextBox" runat="server" Text='<%# Bind("UnitPrice") %>' />
                     <br />
 
+                    Title:
+                    <asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' />
+                    <br />
                     <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                     &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                 </InsertItemTemplate>
@@ -68,6 +73,9 @@
                     <br />
                     ID:
                     <asp:Label ID="IDLabel" runat="server" Text='<%# Eval("ID") %>' />
+                    <br />
+                    Title:
+                    <asp:Label ID="TitleLabel" runat="server" Text='<%# Bind("Title") %>' />
                     <br />
                     <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
                     &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />

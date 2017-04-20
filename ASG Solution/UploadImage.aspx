@@ -4,7 +4,7 @@
     <h2>File Upload</h2>
         <p>
             <asp:FileUpload ID="imageFileUploadControl" runat="server" Width="384px" />
-        </p>
+        &nbsp;(Uploads need to be in &quot;.jpg&quot; format)</p>
     <p>
             <asp:Label ID="lblAltText" runat="server" Text="Alternate Text:"></asp:Label>
             <asp:TextBox ID="txtAltText" runat="server"></asp:TextBox>
