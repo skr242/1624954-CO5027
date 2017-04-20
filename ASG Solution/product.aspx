@@ -13,9 +13,9 @@
                 </HeaderTemplate>
                 <ItemTemplate>
                     <li>
-                        <div class="featprod">
+                        <div class="featprod1">
                         <a href="<%# Eval("Id", "ProductDetails.aspx?Id={0}") %>">
-        <img src="img/product/<%#Eval ("ID") %><%#Eval ("Extension") %>" class="image" alt="<%#Eval ("Title") %>"/>
+        <img src="img/product/<%#Eval ("ID") %><%#Eval ("Extension") %>" class="image" alt="<%#Eval ("AlternateText") %>"/>
                             <div class="overlay">
     <div class="feattext"><%#Eval ("Title") %><br /><br /><%#Eval ("UnitPrice") %></div>
   </div>
