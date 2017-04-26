@@ -30,6 +30,7 @@
                     <asp:ListItem>Products</asp:ListItem>
                     <asp:ListItem>Account</asp:ListItem>
                 </asp:DropDownList>
+                <div class="styled-select"></div>
             
         </li>
             <li>
@@ -59,7 +60,7 @@
 
     </div>
         <div id="map1">
-            <img src="img/map1.png" alt="Block 1B, Simpang 137, Jalan Gadong" height="300"/>
+            <img src="img/map1.png" alt="Map of shop's physical location. Address: Block 1B, Simpang 137, Jalan Gadong" height="300"/>
         </div>
   <br />
 

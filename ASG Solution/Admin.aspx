@@ -53,14 +53,20 @@
                 <InsertItemTemplate>
                     Description:
                     <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
-                    <br />
+                    <asp:RequiredFieldValidator ID="ReqValDescription" runat="server" ControlToValidate="DescriptionTextBox" ErrorMessage="Cannot leave field empty."></asp:RequiredFieldValidator>
+                    </br>
+                    </br>
                     UnitPrice:
                     <asp:TextBox ID="UnitPriceTextBox" runat="server" Text='<%# Bind("UnitPrice") %>' />
-                    <br />
-
+                    <asp:RequiredFieldValidator ID="ReqValUnitPrice" runat="server" ControlToValidate="UnitPriceTextBox" ErrorMessage="Cannot leave field empty."></asp:RequiredFieldValidator>
+                    </br><asp:RegularExpressionValidator ID="RegexUnitPrice" runat="server" ValidationExpression="^[0-9]+[.][0-9]{2}$" ControlToValidate="UnitPriceTextBox" ErrorMessage="Enter in a valid currency format. Eg. '156.34'"></asp:RegularExpressionValidator>
+                    </br>
+                    </br>
                     Title:
                     <asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' />
-                    <br />
+                    <asp:RequiredFieldValidator ID="ReqValTitle" runat="server" ControlToValidate="TitleTextBox" ErrorMessage="Cannot leave field empty."></asp:RequiredFieldValidator>
+                    </br>
+                    </br>
                     <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                     &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                 </InsertItemTemplate>

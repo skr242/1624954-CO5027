@@ -4,7 +4,8 @@
     <h2>File Upload</h2>
         <p>
             <asp:FileUpload ID="imageFileUploadControl" runat="server" Width="384px" />
-    <p>
+        <p>
+            Dimensions of picture must be 150px x 150px.<p>
             <asp:Label ID="lblAltText" runat="server" Text="Alternate Text:"></asp:Label>
             <asp:TextBox ID="txtAltText" runat="server"></asp:TextBox>
         </p>
