@@ -1,5 +1,5 @@
 ﻿function initMap() {
-    var funglasses = { lat: 4.907, lng: 114.916 };
+    var funglasses = { lat: 4.885, lng: 114.931 };
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 16,
         center: funglasses
