@@ -12,13 +12,13 @@ namespace ASG_Solution
     public partial class Default : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(@"Data Source=SQL2016.fse.network;Initial Catalog=db_1624954_co5027_asg;Persist Security Info=True;User ID=user_db_1624954_co5027_asg;Password=Skr-081187");
-        int id;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from tblProducts INNER JOIN tblImage ON tblProducts.ID = tblImage.ImageName";
+            cmd.CommandText = "select * from tblProducts INNER JOIN tblImage ON tblProducts.ID = tblImage.ImageName where Featured=1";
             cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();

@@ -18,5 +18,7 @@ namespace ASG_Solution
         public string Description { get; set; }
         public string UnitPrice { get; set; }
         public string Title { get; set; }
+        public Nullable<int> Quantity { get; set; }
+        public Nullable<int> Featured { get; set; }
     }
 }

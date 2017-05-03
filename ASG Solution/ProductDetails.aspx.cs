@@ -13,7 +13,7 @@ namespace ASG_Solution
         {
             string entryIdString = Request.QueryString["Id"];
             int entryId = int.Parse(entryIdString);
-
+            
             DatabaseEntities db = new DatabaseEntities();
 
             var entry = db.tblProducts.Single(p => p.ID == entryId);

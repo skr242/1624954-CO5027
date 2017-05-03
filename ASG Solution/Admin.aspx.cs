@@ -20,5 +20,10 @@ namespace ASG_Solution
             HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             Server.Transfer("Login.aspx", true);
         }
+
+        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
+        {
+
+        }
     }
 }
