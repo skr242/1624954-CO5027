@@ -13,12 +13,11 @@
         <asp:TextBox ID="txtLoginPassword" TextMode="Password" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="This field is required. Please key in your password." ControlToValidate="txtLoginPassword"></asp:RequiredFieldValidator>
 
-            <br />
-            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-            <br />
+            <p>
+            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" /></p>
+            <p>
             <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
-            <br />
-            <a href="Register.aspx">Register an Account</a>
+                </p>
             </form>
     </div>
 </asp:Content>

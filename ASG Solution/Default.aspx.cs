@@ -18,7 +18,7 @@ namespace ASG_Solution
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from tblProducts INNER JOIN tblImage ON tblProducts.ID = tblImage.ImageName where Featured=1";
+            cmd.CommandText = "select * from tblProducts INNER JOIN tblImage ON tblProducts.ID = tblImage.ImageName where Featured=1 AND Quantity>0";
             cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();

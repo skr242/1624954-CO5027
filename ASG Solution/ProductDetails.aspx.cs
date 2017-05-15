@@ -21,16 +21,23 @@ namespace ASG_Solution
             litTitle.Text = entry.Title;
             litUnitPrice.Text = entry.UnitPrice;
             litDescription.Text = entry.Description;
+            litQuantity.Text = entry.Quantity.ToString();
 
-            string productId = Request.QueryString["Id"];
-            int imageId = int.Parse(productId);
-            var imageData = db.tblImages.Single(p => p.ID == imageId);
-            string filename = productId + imageData.Extension;
+            string imageId = Request.QueryString["Id"];
+            var imageData = db.tblImages.Single(p => p.ImageName == imageId);
+            var imageData1 = db.tblImage1.Single(p => p.ImageName == imageId);
+            string filename = imageId + imageData.Extension;
+            string filename1 = "a" + imageId + imageData1.Extension;
 
             CurrentImage.AlternateText = imageData.AlternateText;
             CurrentImage.Width = (Unit)imageData.Width;
             CurrentImage.Height = (Unit)imageData.Height;
             CurrentImage.ImageUrl = "~/img/product/" + filename;
+
+            CurrentImage1.AlternateText = imageData1.AlternateText;
+            CurrentImage1.Width = (Unit)imageData1.Width;
+            CurrentImage1.Height = (Unit)imageData1.Height;
+            CurrentImage1.ImageUrl = "~/img/product/" + filename1;
         }
     }
 }

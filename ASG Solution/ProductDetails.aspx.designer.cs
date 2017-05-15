@@ -40,6 +40,15 @@ namespace ASG_Solution {
         protected global::System.Web.UI.WebControls.Image CurrentImage;
         
         /// <summary>
+        /// CurrentImage1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CurrentImage1;
+        
+        /// <summary>
         /// litDescription control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,24 @@ namespace ASG_Solution {
         protected global::System.Web.UI.WebControls.Literal litDescription;
         
         /// <summary>
+        /// litQuantity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litQuantity;
+        
+        /// <summary>
+        /// DropDownList1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        
+        /// <summary>
         /// litUnitPrice control.
         /// </summary>
         /// <remarks>
@@ -56,5 +83,14 @@ namespace ASG_Solution {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal litUnitPrice;
+        
+        /// <summary>
+        /// btnCart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCart;
     }
 }

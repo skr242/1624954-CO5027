@@ -16,6 +16,17 @@
           <Property Name="Extension" Type="varchar" MaxLength="10" />
           <Property Name="ImageName" Type="varchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="tblImage1">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Width" Type="int" />
+          <Property Name="Height" Type="int" />
+          <Property Name="AlternateText" Type="varchar" MaxLength="50" />
+          <Property Name="Extension" Type="varchar" MaxLength="50" />
+          <Property Name="ImageName" Type="varchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="tblProducts">
           <Key>
             <PropertyRef Name="ID" />
@@ -29,6 +40,7 @@
         </EntityType>
         <EntityContainer Name="db_1624954_co5027_asgModelStoreContainer">
           <EntitySet Name="tblImage" EntityType="Self.tblImage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblImage1" EntityType="Self.tblImage1" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblProducts" EntityType="Self.tblProducts" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
@@ -47,6 +59,17 @@
           <Property Name="Extension" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
+        <EntityType Name="tblImage1">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Width" Type="Int32" />
+          <Property Name="Height" Type="Int32" />
+          <Property Name="AlternateText" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Extension" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
         <EntityType Name="tblProduct">
           <Key>
             <PropertyRef Name="ID" />
@@ -60,6 +83,7 @@
         </EntityType>
         <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tblImages" EntityType="Self.tblImage" />
+          <EntitySet Name="tblImage1" EntityType="Self.tblImage1" />
           <EntitySet Name="tblProducts" EntityType="Self.tblProduct" />
         </EntityContainer>
       </Schema>
@@ -71,6 +95,18 @@
           <EntitySetMapping Name="tblImages">
             <EntityTypeMapping TypeName="db_1624954_co5027_asgModel.tblImage">
               <MappingFragment StoreEntitySet="tblImage">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="AlternateText" ColumnName="AlternateText" />
+                <ScalarProperty Name="Extension" ColumnName="Extension" />
+                <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblImage1">
+            <EntityTypeMapping TypeName="db_1624954_co5027_asgModel.tblImage1">
+              <MappingFragment StoreEntitySet="tblImage1">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Width" ColumnName="Width" />
                 <ScalarProperty Name="Height" ColumnName="Height" />

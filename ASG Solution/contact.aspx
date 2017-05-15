@@ -11,18 +11,18 @@
     
         <ol>
             <li>
-            <asp:Label ID="lblName" runat="server" Text="Name: "></asp:Label>
+            <asp:Label ID="lblName" AssociatedControlID="txtName" runat="server" Text="Name: "></asp:Label>
             <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="reqValName" runat="server" ErrorMessage="A Name is Required. Please key in your name. eg. John Doe" ControlToValidate="txtName"></asp:RequiredFieldValidator>
         </li>
             <li>
-            <asp:Label ID="lblEmail" runat="server" Text="Email: "></asp:Label>
+            <asp:Label ID="lblEmail" AssociatedControlID="txtEmail" runat="server" Text="Email: "></asp:Label>
             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="An Email is Required. Please key in your email. eg. abc@123.com" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="regexValidEmail" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtEmail" ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
         </li>
             <li>
-            <asp:Label ID="lblSubject" runat="server" Text="Subject: "></asp:Label>
+            <asp:Label ID="lblSubject" AssociatedControlID="ddSubject" runat="server" Text="Subject: "></asp:Label>
             
                 <asp:DropDownList ID="ddSubject" runat="server" style="margin-bottom: 0px" Height="38px" Width="171px">
                     <asp:ListItem Selected="True">General</asp:ListItem>
@@ -34,7 +34,7 @@
             
         </li>
             <li>
-            <asp:Label ID="lblMessage" runat="server" Text="Message: "></asp:Label>
+            <asp:Label ID="lblMessage" AssociatedControlID="txtMessage" runat="server" Text="Message: "></asp:Label>
 
             <asp:TextBox ID="txtMessage" runat="server" Height="87px" TextMode="MultiLine" Width="257px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="reqValMessage" runat="server" ErrorMessage="A Message is Required. Please enter the Message you wish to send to our Staff." ControlToValidate="txtMessage"></asp:RequiredFieldValidator>

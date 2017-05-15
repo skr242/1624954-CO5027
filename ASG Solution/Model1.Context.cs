@@ -26,6 +26,7 @@ namespace ASG_Solution
         }
     
         public virtual DbSet<tblImage> tblImages { get; set; }
+        public virtual DbSet<tblImage1> tblImage1 { get; set; }
         public virtual DbSet<tblProduct> tblProducts { get; set; }
     }
 }

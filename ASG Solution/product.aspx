@@ -19,7 +19,7 @@
                             <div class="overlay">
     <div class="feattext"><%#Eval ("Title") %><br /><br /><%#Eval ("UnitPrice") %></div>
   </div>
-                            </a>
+                            </a>    
         
     </div>
                     </li>
