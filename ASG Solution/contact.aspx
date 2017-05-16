@@ -60,8 +60,8 @@
 
     </div>
         <div id="map1">
-            <img src="img/map1.png" alt="Map of shop's physical location. Address: Block 1B, Simpang 137, Jalan Gadong" height="300"/>
+            <img src="img/map1.png" alt="Map of shop's physical location. Address: Block 1B, Simpang 137, Jalan Gadong" height="300" width="500"/>
         </div>
-  <br />
+
 
 </asp:Content>

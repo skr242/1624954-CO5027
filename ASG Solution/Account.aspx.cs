@@ -18,6 +18,7 @@ namespace ASG_Solution
         protected void Button1_Click(object sender, EventArgs e)
         {
             HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Server.Transfer("Login.aspx", true);
         }
     }
 }

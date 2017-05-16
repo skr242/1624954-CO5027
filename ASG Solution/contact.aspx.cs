@@ -15,16 +15,17 @@ namespace ASG_Solution
 
         }
 
+        //https://www.aspsnippets.com/Articles/How-to-create-Contact-Us-Page-in-ASPNet.aspx
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            MailMessage mm = new MailMessage("skr242@gmail.com", "skr242@gmail.com");
-            MailMessage mm1 = new MailMessage("skr242@gmail.com", txtEmail.Text);
-            mm.Subject = ddSubject.Text;
-            mm.Body = "Name: " + txtName.Text + "<br /><br />Email: " + txtEmail.Text + "<br /><br /> Subject: " + ddSubject.Text + "<br /><br />Message: " + txtMessage.Text;
-            mm.IsBodyHtml = true;
-            mm1.Subject = "Funglasses Mail Sent";
-            mm1.Body = "Your email has been successfully sent to a Funglasses staff, please give us a moment to respond. Thank you for your patience";
-            mm1.IsBodyHtml = true;
+            MailMessage mailmsg = new MailMessage("skr242@gmail.com", "skr242@gmail.com");
+            MailMessage mailmsg1 = new MailMessage("skr242@gmail.com", txtEmail.Text);
+            mailmsg.Subject = ddSubject.Text;
+            mailmsg.Body = "Name: " + txtName.Text + "<br /><br />Email: " + txtEmail.Text + "<br /><br /> Subject: " + ddSubject.Text + "<br /><br />Message: " + txtMessage.Text;
+            mailmsg.IsBodyHtml = true;
+            mailmsg1.Subject = "Funglasses Mail Sent";
+            mailmsg1.Body = "Your email has been successfully sent to a Funglasses staff, please give us a moment to respond. Thank you for your patience";
+            mailmsg1.IsBodyHtml = true;
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com";
             smtp.EnableSsl = true;
@@ -34,8 +35,8 @@ namespace ASG_Solution
             smtp.UseDefaultCredentials = true;
             smtp.Credentials = NetworkCred;
             smtp.Port = 587;
-            smtp.Send(mm);
-            smtp.Send(mm1);
+            smtp.Send(mailmsg);
+            smtp.Send(mailmsg1);
             litContactSuccess.Text = "Email Sent Successfully.";
 
         }

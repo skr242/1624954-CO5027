@@ -12,7 +12,7 @@
 <body>
     <div id="wrapper">
         <div id="logo" class="clslogo">
-            <img class="logo" src="img/logo3.png" alt="Funglasses Logo"/>
+            <img class="logo" src="img/logo3.png" alt="Funglasses Logo" width="400" height="96"/>
         </div>
         <div id="settings">
             <ul>
@@ -28,10 +28,10 @@
             </ul>
         </div>
         <div id="banner">
-            <img class="mySlides" src="img/banner/1.jpg" alt="Stussy Advertisement" />
-            <img class="mySlides" src="img/banner/2.jpg" alt="Woman modelling sunglasses" />
-            <img class="mySlides" src="img/banner/3.jpg" alt="Woman modelling Rayban sunglasses" />
-            <img class="mySlides" src="img/banner/4.jpg" alt="Pair of Rayban sunglasses" />
+            <img class="mySlides" src="img/banner/1.jpg" alt="Stussy Advertisement" width="980" height="364"/>
+            <img class="mySlides" src="img/banner/2.jpg" alt="Woman modelling sunglasses" width="980" height="364"/>
+            <img class="mySlides" src="img/banner/3.jpg" alt="Woman modelling Rayban sunglasses" width="980" height="364"/>
+            <img class="mySlides" src="img/banner/4.jpg" alt="Pair of Rayban sunglasses" width="980" height="364"/>
 
             <script>
                 var slideIndex = 0;

@@ -86,13 +86,13 @@ padding-bottom:2%;
 
 #banner {
     margin:auto;
-    width:68%;
+    width:80%;
     border:3px solid #333300;
 
 }
 
 .mySlides {
-width: 612px;
+width: 100%;
 }
 
 #main-content { margin:auto; width:580px; }
