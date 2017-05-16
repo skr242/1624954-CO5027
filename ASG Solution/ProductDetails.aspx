@@ -12,25 +12,22 @@
         <p>
             <asp:Literal ID="litDescription" runat="server"></asp:Literal>
         </p>
-        <p>
+        <h4>
             <asp:Literal ID="litQuantity" runat="server"></asp:Literal>
-&nbsp;stocks left</p>
+pairs left</h4>
         <p>
-            Select Frame Size:
+            Select Quantity:
             <asp:DropDownList ID="DropDownList1" runat="server">
-                <asp:ListItem>50mm</asp:ListItem>
-                <asp:ListItem>52mm</asp:ListItem>
-                <asp:ListItem>54mm</asp:ListItem>
-                <asp:ListItem>56mm</asp:ListItem>
-                <asp:ListItem>58mm</asp:ListItem>
-                <asp:ListItem>60mm</asp:ListItem>
+                <asp:ListItem Selected="True">1</asp:ListItem>
+                <asp:ListItem>2</asp:ListItem>
+                <asp:ListItem>3</asp:ListItem>
             </asp:DropDownList>
         </p>
         <h4>
-            <asp:Literal ID="litUnitPrice" runat="server"></asp:Literal>
+            $<asp:Literal ID="litUnitPrice" runat="server"></asp:Literal>
         </h4>
         <p>
-            <asp:Button ID="btnCart" runat="server" Text="Add to Cart" />
+            <asp:Button ID="btnCart" runat="server" Text="Purchase this Item" OnClick="btnCart_Click" />
         </p>
     </form>
 </asp:Content>

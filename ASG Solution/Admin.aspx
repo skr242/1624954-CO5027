@@ -56,7 +56,7 @@
                     <p><asp:Label ID="lblUnitPriceTextBox" AssociatedControlID="UnitPriceTextBox" runat="server" Text="Unit Price: "></asp:Label>
                     <asp:TextBox ID="UnitPriceTextBox" runat="server" Text='<%# Bind("UnitPrice") %>' />
                     <asp:RequiredFieldValidator ForeColor="Red" ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter a price." ControlToValidate="UnitPriceTextBox" ValidationGroup="insert1"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ForeColor="Red" ID="RegularExpressionValidator3" runat="server" ErrorMessage="Please enter a number in currency format eg $152.50." ControlToValidate="UnitPriceTextBox" ValidationExpression="^[+-]?[0-9]{1,3}(?:,?[0-9]{3})*(?:\.[0-9]{2})?$" ValidationGroup="insert1"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ForeColor="Red" ID="RegularExpressionValidator3" runat="server" ErrorMessage="Please enter a number in currency format without symbols eg 152.50." ControlToValidate="UnitPriceTextBox" ValidationExpression="^\s*(?=.*[1-9])\d*(?:\.\d{1,2})?\s*$" ValidationGroup="insert1"></asp:RegularExpressionValidator>
                     <p><asp:Label ID="lblTitleTextBox" AssociatedControlID="TitleTextBox" runat="server" Text="Title: "></asp:Label>
                     <asp:TextBox ID="TitleTextBox" runat="server" Text='<%# Bind("Title") %>' />
                     <asp:RequiredFieldValidator ForeColor="Red" ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter a title." ControlToValidate="TitleTextBox" ValidationGroup="insert1"></asp:RequiredFieldValidator>
@@ -87,7 +87,7 @@
                     <p><asp:Label ID="lblUnitPriceTextBox1" AssociatedControlID="UnitPriceTextBox1" runat="server" Text="Unit Price: "></asp:Label>
                     <asp:TextBox ID="UnitPriceTextBox1" runat="server" Text='<%# Bind("UnitPrice") %>' />
                     <asp:RequiredFieldValidator ForeColor="Red" ID="RequiredFieldValidator21" runat="server" ErrorMessage="Please enter a price." ControlToValidate="UnitPriceTextBox1" ValidationGroup="insert11"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ForeColor="Red" ID="RegularExpressionValidator31" runat="server" ErrorMessage="Please enter a number in currency format eg $152.50." ControlToValidate="UnitPriceTextBox1" ValidationExpression="^[+-]?[0-9]{1,3}(?:,?[0-9]{3})*(?:\.[0-9]{2})?$" ValidationGroup="insert11"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ForeColor="Red" ID="RegularExpressionValidator31" runat="server" ErrorMessage="Please enter a number in currency format without symbols. eg 152.50." ControlToValidate="UnitPriceTextBox1" ValidationExpression="^\s*(?=.*[1-9])\d*(?:\.\d{1,2})?\s*$" ValidationGroup="insert11"></asp:RegularExpressionValidator>
                     <p><asp:Label ID="lblTitleTextBox1" AssociatedControlID="TitleTextBox1" runat="server" Text="Title: "></asp:Label>
                     <asp:TextBox ID="TitleTextBox1" runat="server" Text='<%# Bind("Title") %>' />
                     <asp:RequiredFieldValidator ForeColor="Red" ID="RequiredFieldValidator31" runat="server" ErrorMessage="Please enter a title." ControlToValidate="TitleTextBox1" ValidationGroup="insert11"></asp:RequiredFieldValidator>

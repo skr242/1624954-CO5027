@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
     <h2>File Upload</h2>
-        <p>Dimensions of picture must be 150px x 150px.</p>
+        <p>Dimensions of picture must be 620px x 310px.</p>
         <h3>Main Image</h3>
         <p>
             <asp:FileUpload ID="imageFileUploadControl" runat="server" Width="384px" />
