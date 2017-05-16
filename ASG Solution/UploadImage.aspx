@@ -39,6 +39,5 @@
             <asp:Image ID="CurrentImage6" runat="server" />
             <asp:Image ID="CurrentImage7" runat="server" />
         </p>
-        <p>&nbsp;</p>
     </form>
 </asp:Content>

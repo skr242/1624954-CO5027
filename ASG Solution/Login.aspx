@@ -8,7 +8,7 @@
         <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="reqValName" runat="server" ErrorMessage="This field is required. Please key in your email." ControlToValidate="txtLoginEmail"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="regexValidEmail" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtLoginEmail" ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
-        <br />
+        
         <asp:Label ID="lblLoginPassword" runat="server" Text="Password:"></asp:Label>
         <asp:TextBox ID="txtLoginPassword" TextMode="Password" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="This field is required. Please key in your password." ControlToValidate="txtLoginPassword"></asp:RequiredFieldValidator>

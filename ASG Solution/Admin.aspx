@@ -103,7 +103,7 @@
                     <p>
                     ID:
                     <asp:Label ID="IDLabel1" runat="server" Text='<%# Eval("ID") %>' />
-                    <br />
+                   
                     <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" ValidationGroup="insert11"/>
                     <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" ValidationGroup="insert11"/>
                 </EditItemTemplate>

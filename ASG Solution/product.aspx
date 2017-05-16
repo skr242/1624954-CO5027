@@ -1,11 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="ASG_Solution.product" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="navactive" runat="server">
-                <li><a class="navtext" href="Default.aspx">Home</a></li>
-                <li><a class="navtextactive" href="Product.aspx">Products</a></li>
-                <li><a class="navtext" href="Contact.aspx">Contact</a></li>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Products</h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteBasic.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="ASG_Solution.Product" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+     <h2>Products</h2>
         <div id="featwrap">
             <asp:Repeater ID="rptrProducts" runat="server">
                 <HeaderTemplate>
@@ -29,5 +24,4 @@
                 </FooterTemplate>
             </asp:Repeater>
 </div>
-    
 </asp:Content>

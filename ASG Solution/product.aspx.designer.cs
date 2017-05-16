@@ -10,7 +10,7 @@
 namespace ASG_Solution {
     
     
-    public partial class product {
+    public partial class Product {
         
         /// <summary>
         /// rptrProducts control.

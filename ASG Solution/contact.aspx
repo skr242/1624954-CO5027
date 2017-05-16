@@ -1,10 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ASG_Solution.Contact" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="navactive" runat="server">
-                <li><a class="navtext" href="Default.aspx">Home</a></li>
-                <li><a class="navtext" href="Product.aspx">Products</a></li>
-                <li><a class="navtextactive" href="Contact.aspx">Contact</a></li>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteBasic.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ASG_Solution.Contact" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Contact Us</h2>
     <div id="form">
     <form id="frmContact" runat="server">
@@ -24,13 +19,13 @@
             <li>
             <asp:Label ID="lblSubject" AssociatedControlID="ddSubject" runat="server" Text="Subject: "></asp:Label>
             
-                <asp:DropDownList ID="ddSubject" runat="server" style="margin-bottom: 0px" Height="38px" Width="171px">
+                <asp:DropDownList ID="ddSubject" runat="server"  Height="38px" Width="171px">
                     <asp:ListItem Selected="True">General</asp:ListItem>
                     <asp:ListItem>Payment</asp:ListItem>
                     <asp:ListItem>Products</asp:ListItem>
                     <asp:ListItem>Account</asp:ListItem>
                 </asp:DropDownList>
-                <div class="styled-select"></div>
+               
             
         </li>
             <li>
@@ -42,7 +37,7 @@
         </li>
             <li>
                 <asp:Literal ID="litContactSuccess" runat="server"></asp:Literal>
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="submit" OnClick="btnSubmit_Click"/>
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click"/>
         </li>
                 </ol>
     </form>
@@ -62,6 +57,4 @@
         <div id="map1">
             <img src="img/map1.png" alt="Map of shop's physical location. Address: Block 1B, Simpang 137, Jalan Gadong" height="300" width="500"/>
         </div>
-
-
 </asp:Content>
