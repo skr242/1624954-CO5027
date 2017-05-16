@@ -12,11 +12,12 @@
 <body>
     <div id="wrapper">
         <div id="logo" class="clslogo">
-            <img class="logo" src="img/logo3.png" alt="Funglasses Logo">
+            <img class="logo" src="img/logo3.png" alt="Funglasses Logo"/>
         </div>
         <div id="settings">
             <ul>
                 <li><a class="settext" href="Login.aspx">Login</a></li>
+                <li><a class="settext" href="Account.aspx">My Account</a></li>
             </ul>
         </div>
         <div id="navbar">
