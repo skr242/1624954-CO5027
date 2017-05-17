@@ -16,10 +16,10 @@
             <asp:Literal ID="litUpload" runat="server"></asp:Literal>
         </p>
         <p>
-            <asp:Image ID="CurrentImage" runat="server" />
-            <asp:Image ID="CurrentImage1" runat="server" />
-            <asp:Image ID="CurrentImage2" runat="server" />
-            <asp:Image ID="CurrentImage3" runat="server" />
+            <asp:Image ID="CurrentImage" Width="62" Height="31" AlternateText="Image Preview 1" runat="server" />
+            <asp:Image ID="CurrentImage1" Width="62" Height="31" AlternateText="Image Preview 1" runat="server" />
+            <asp:Image ID="CurrentImage2" Width="62" Height="31" AlternateText="Image Preview 1" runat="server" />
+            <asp:Image ID="CurrentImage3" Width="62" Height="31" AlternateText="Image Preview 1" runat="server" />
         </p>
         <h3>2nd Image</h3>
         <p>
@@ -34,10 +34,10 @@
             <asp:Literal ID="litUpload1" runat="server"></asp:Literal>
         </p>
         <p>
-            <asp:Image ID="CurrentImage4" runat="server" />
-            <asp:Image ID="CurrentImage5" runat="server" />
-            <asp:Image ID="CurrentImage6" runat="server" />
-            <asp:Image ID="CurrentImage7" runat="server" />
+            <asp:Image ID="CurrentImage4" Width="62" Height="31" AlternateText="Image Preview 2" runat="server" />
+            <asp:Image ID="CurrentImage5" Width="62" Height="31" AlternateText="Image Preview 2" runat="server" />
+            <asp:Image ID="CurrentImage6" Width="62" Height="31" AlternateText="Image Preview 2" runat="server" />
+            <asp:Image ID="CurrentImage7" Width="62" Height="31" AlternateText="Image Preview 2" runat="server" />
         </p>
     </form>
 </asp:Content>
