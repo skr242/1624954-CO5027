@@ -65,7 +65,7 @@ namespace ASG_Solution
             productItem.name = title;
             productItem.price = price.ToString();
             productItem.quantity = quantity.ToString();
-            productItem.currency = "GBP";
+            productItem.currency = "BND";
             productItem.sku = entryIdString;
 
             var transactionDetails = new Details();
@@ -74,7 +74,7 @@ namespace ASG_Solution
             transactionDetails.subtotal = subtotal.ToString("0.00");
 
             var transactionAmount = new Amount();
-            transactionAmount.currency = "GBP";
+            transactionAmount.currency = "BND";
             transactionAmount.total = total.ToString("0.00");
             transactionAmount.details = transactionDetails;
 
